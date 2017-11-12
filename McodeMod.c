@@ -1,4 +1,4 @@
-#include "McodeMod.h"
+
 
 #define CQ_DEFAULT	0
 
@@ -11,11 +11,11 @@ char *morse_code[40] = {"",
 ".--","-..-","-.--","--..","-----",".----","..---","...--","....-",
 ".....","-....","--...","---..","----.","--..--","-.-.-.","..--.."};
 
+//original declaration
+//inline char * mcodestring(int asciicode) {
+   
 
-//original declartion has incline
-// inline char * mcodestring(int asciicode)
-char * mcodestring(int asciicode)
-{
+char * mcodestring(int asciicode) {
    char *mc;   // this is the mapping from the ASCII code into the mcodearray of strings.
 
    if (asciicode > 122)  // Past 'z'
