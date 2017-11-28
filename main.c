@@ -25,14 +25,14 @@ int main(int argc, const char * argv[]) {
 
     else if (argc < 3) {
         printf("You have provided less inputs than what the program requires. In order to run the program: './McodeM -w WORD'/n Closing program. ");
-        return -1;
+        return -2;
     }
         
     
     else if (argc == 3){
         if (strcmp(argv[1], "-w")) {
             //DEBUG
-            printf("This shit works");
+            //printf("This shit works");
 
 
             //Check if this works at all
